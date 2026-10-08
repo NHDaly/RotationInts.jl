@@ -1,13 +1,15 @@
 name = "RotationInts"
 uuid = "d2f45c85-4e53-454b-bb65-25ed7e1d2c54"
-authors = ["Nathan Daly <nathan.daly@relational.ai> and contributors"]
 version = "1.0.0-DEV"
+authors = ["Nathan Daly <nathan.daly@relational.ai> and contributors"]
 
 [compat]
 julia = "1.10"
+ReTestItems = "1.35.3"
 
 [extras]
+ReTestItems = "817f1d60-ba6b-4fd5-9520-3cf149f6a823"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["ReTestItems", "Test"]
